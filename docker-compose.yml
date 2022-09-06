@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  todo-web:
+    image: ${DOCKER_REGISTRY-}todo-web:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
